@@ -1,9 +1,10 @@
-import './globals.css'
+import Aside from './components/Aside';
+import './globals.css';
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -12,7 +13,10 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body className="flex h-screen">
+        <Aside />
+        <div className="bg-gray-100  w-screen">{children}</div>
+      </body>
     </html>
-  )
+  );
 }
