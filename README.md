@@ -8,6 +8,11 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
+
+npx prisma db push    
+npx prisma db seed  
+
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
